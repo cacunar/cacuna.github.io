@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Acuña - resume</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script>
+      function smoothScroll(target, duration) {
+        var target = document.querySelector(target);
+        var targetPosition = target.getBoundingClientRect().top;
+        var startPosition = window.pageYOffset;
+        var distance = targetPosition - startPosition;
+        var startTime = null;
+
+        function animation(currentTime) {
+          if (startTime === null) startTime = currentTime;
+          var timeElapsed = currentTime - startTime;
+          var run = easing(timeElapsed, startPosition, distance, duration);
+          window.scrollTo(0, run);
+          if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        function easing(t, b, c, d) {
+          t /= d / 2;
+          if (t < 1) return (c / 2) * t * t + b;
+          t--;
+          return (-c / 2) * (t * (t - 2) - 1) + b;
+        }
+
+        requestAnimationFrame(animation);
+      }
+
+      var home = document.querySelector("#home");
+      var resume = document.querySelector("#resume");
+
+      var homeLink = document.querySelector('nav a[href="#home"]');
+      var resumeLink = document.querySelector('nav a[href="#resume"]');
+
+      homeLink.addEventListener("click", function () {
+        smoothScroll("#home", 1000);
+      });
+
+      resumeLink.addEventListener("click", function () {
+        smoothScroll("#services", 1000);
+      });
+    </script>
+  </head>
+  <body style="background-color: black">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-4">
+          <div class="sectionOne">
+            <img
+              src="./assets/img/cacuna-icon.jpg"
+              alt="carlos-acuna-sticker"
+              height="200px"
+            />
+            <h1>Carlos Acuña</h1>
+            <p>Full Stack Developer from Chile</p>
+            <ul class="nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-12 col-sm-4">
+          <div class="sectionTwo">
+            <div class="container-fluid">
+              <div class="row">
+                <section id="resume"></section>
+                <h2>Resume</h2>
+                <div class="col-md-5 cols-xs-5 mt-5">
+                  <div class="sectionTwo-child">
+                    <img
+                      src="./assets/img/cacuna-icon-2.jpg"
+                      alt="carlos-acuna-sticker-2"
+                      height="200px"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-7 mt-5">
+                  <div class="sectionTwo-child">
+                    <p class="emphasis">Full Stack Developer</p>
+                    <p>
+                      Soy un ingeniero altamente dedicado y diciplinado con más
+                      de 3 años de experiencia en soluciones en nubes públicas,
+                      orientado a las buenas prácticas y seguridad en la nube.
+                      Busco seguir creciendo profesional y personalmente
+                      enfrentando nuevos retos y desafíos.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 mt-5">
+                  <div class="sectionTwo-child spacingTop">
+                    <p class="emphasis">Experiencia Laboral</p>
+                    <ul>
+                      <li>Digital Architect</li>
+                      <li>Ingeniero de infraestructura</li>
+                      <li>Arquitecto Cloud (Infraestructura y redes)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 mt-5">
+                  <div class="sectionTwo-child spacingTop">
+                    <p class="emphasis">Educación</p>
+                    <p>
+                      Ingeniería en electrónica mención telecomunicaciones
+                      <br />
+                      Universidad Rafael Belloso Chancín | Sep 2012 – Nov 2017
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-sm-4">
+          <div class="sectionThree">
+            <section id="portfolio"></section>
+            <h2>Portfolio</h2>
+            <div
+              id="carouselExampleDark"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img
+                    src="./assets/img/p1.jpg"
+                    class="d-block w-100"
+                    alt="Proyecto uno"
+                    height="800"
+                    width="800"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="./assets/img/p2.jpeg"
+                    class="d-block w-100"
+                    alt="Proyecto dos"
+                    height="800"
+                    width="800"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="./assets/img/p3.jpeg"
+                    class="d-block w-100"
+                    alt="Proyecto tres"
+                    height="800"
+                    width="800"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="./assets/img/p4.jpeg"
+                    class="d-block w-100"
+                    alt="Proyecto cuatro"
+                    height="800"
+                    width="800"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Fourth slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="footer">
+              <p class="mb-0">
+                Carlos Acuna 2023. Todos los derechos reservados.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+</html>

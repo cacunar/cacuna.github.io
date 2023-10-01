@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap");
+
+*{
+    font-family: Raleway;
+}
+
+.sectionOne {
+    width: auto;
+    height: 50px;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+ul.nav.nav-underline li.nav-item > a{
+    color: white;
+    border-bottom: 0 solid;
+}
+
+ul.nav.nav-underline li.nav-item > a:hover{
+    display: block;
+    color: white;
+    border-bottom: 0 solid;
+}
+
+ul.nav.nav-underline li.nav-item > a.active{
+    color: white;
+    border-bottom: 0 solid;
+}
+
+ul.nav.nav-underline li.nav-item > a.active::after{
+    margin-top: 2px;
+    content: '';
+    display: block;
+    width: 0;    /* Hide border initially */
+    height: 2px;
+    background: #d2a331;
+    transition: width 0.5s ease;
+}
+
+ul.nav.nav-underline li.nav-item > a.active:hover::after{
+    width: 100%;
+}
+
+ul.nav.nav-underline li.nav-item > a::after{
+    margin-top: 2px;
+    content: '';
+    display: block;
+    width: 0;    /* Hide border initially */
+    height: 2px;
+    background: #d2a331;
+    transition: width 0.5s ease;
+}
+
+ul.nav.nav-underline li.nav-item > a:hover::after{
+    width: 100%;
+}
+
+.sectionTwo {
+    height: 100%;
+    width: auto;
+    color: white;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsla(0, 0%, 11%, 0.1);
+}
+
+.sectionTwo h2 {
+    padding-top: 5%;
+    text-align: center;
+    
+}
+
+.spacingTop {
+    margin-top: 25%;
+}
+
+div.sectionTwo-child > p.emphasis {
+    margin-left: -2;
+    font-size: 30px;
+    color: #d2a331;
+}
+
+.sectionTwo-child {
+    padding-top: 5%;
+}
+
+.sectionTwo img {
+    padding-left: 25%;
+}
+
+
+.sectionThree {
+    height: 90%;
+    width: auto;
+    color: white;
+    position: absolute;
+    top: 270%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsla(0, 0%, 11%, 0.1);
+}
+
+.sectionThree h2 {
+    padding-top: 3.5%;
+    text-align: center;
+    
+}
+
+.footer{
+    padding: 1%;
+    text-align: center;
+    background-color: gray;
+}
