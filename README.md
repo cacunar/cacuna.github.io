@@ -4,11 +4,9 @@
 
 Repositorio creado para el desafio "Trabajo colaborativo y Github Pages".
 
-Este desafío donde deberás actualizar tu curriculum y portafolio dejándolo disponible en
-Github Pages.
-Para actualizar tu portafolio con todo lo que has aprendido puedes utilizar plantillas, un
-framework como bootstrap o crear el HTML y CSS desde cero.
-Adicionalmente, deberás demostrar que puedes trabajar de forma colaborativa en Github
+Este desafío consiste en actualizar el curriculum y portafolio dejándolo disponible en
+Github Pages. Adicionalmente, para el desafio podemos actualizar el portafolio con todo lo aprendido utilizando plantillas, un framework como bootstrap o crear el HTML y CSS desde cero.
+Por ultimo, debemos demostrar que podemos trabajar de forma colaborativa en Github
 haciendo alguna contribución a un repositorio de algún compañero.
 
 ## Creado con 
