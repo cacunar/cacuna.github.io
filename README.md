@@ -14,19 +14,21 @@ haciendo alguna contribución a un repositorio de algún compañero.
 ## Creado con 
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 ## Contributing
-Las contribuciones son lo que hace que la comunidad de código abierto sea un lugar increíble para aprender, inspirar y crear. Cualquier contribución que realices es altamente apreciada.
+Las contribuciones son lo que hace que la comunidad de código abierto sea un lugar increíble para aprender, inspirar y crear. Cualquier contribución que realices es **altamente apreciada**.
 
 Si tienes una sugerencia que podría mejorar esto, por favor, haz un "fork" del repositorio y crea una solicitud de extracción. También puedes simplemente abrir un problema con la etiqueta "mejora".
+
 ¡No olvides darle una estrella al proyecto! ¡Gracias de nuevo!
 
-Hacer un "Fork" del Proyecto
-Crear tu Rama de Características (git checkout -b feature/CaracteristicaIncreible)
-Hacer tus Cambios (git commit -m 'Agregar una Característica Increíble')
-Empujar a la Rama (git push origin feature/CaracteristicaIncreible)
-Abrir una Solicitud de Extracción
+1. Hacer un "Fork" del Proyecto
+2. Crear tu Rama de Características (`git checkout -b feature/CaracteristicaIncreible`)
+3. Hacer tus Cambios (`git commit -m 'Agregar una Característica Increíble'`)
+4. "Push" a la Rama (`git push origin feature/CaracteristicaIncreible`)
+5. Abrir un "Pull Request"
+
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 ## Licencia
