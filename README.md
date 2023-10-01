@@ -39,6 +39,11 @@ Distribuido bajo la Licencia MIT. Consulta LICENSE.txt para obtener más informa
 Acceso a github pages: https://cacunar.github.io
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
+## Contribuciones
+Link de acceso directo a la constribuciones realizadas a compañeros:
+1. https://github.com/olimaCampos/camilocv/pull/2
+2. 
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
